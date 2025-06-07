@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UR Pixel Studio | Photography</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      background: #fefefe;
+    }
+    header {
+      height: 100vh;
+      background: url('ADC7835F-0527-41EB-A023-42A11171BB99_1_105_c.jpeg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 5px 10px grey;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 6rem;
+      margin: 0;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .album {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+    .album:hover {
+      transform: scale(1.03);
+    }
+    .album img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .album-title {
+      padding: 1rem;
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-box {
+      padding: 1.5rem;
+      border-radius: 10px;
+      background: #f9f9f9;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .service-box h3 {
+      margin-top: 0;
+      color: #222;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 0.75rem;
+      font-size: 1rem;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <div>
+      <h1>UR Pixel Studio</h1>
+      <p>Capturing Moments. Telling Stories.</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>Welcome Note</h2>
+    <p style="font-size: 20px;">Welcome to UR Pixel Studio, where every frame is a heartfelt story waiting to be told. We are a creative photography studio built on the belief that the most powerful images are those that preserve not just moments, but memories, memories filled with emotion, personality, and authenticity. At UR Pixel Studio, we don’t just click pictures; we capture the essence of your journey, freezing time in the form of timeless visuals you’ll cherish for a lifetime.
+    Our studio was born out of a deep passion for storytelling through visuals. Photography, to us, is not just a profession but a way of seeing the world, noticing the smiles others miss, the subtle glances, the emotions behind the scenes. Over the years, we’ve grown into a trusted name among individuals, couples, families, and businesses who value creativity, care, and quality. With a unique blend of technical skill and artistic vision, we aim to turn everyday moments into stunning visual narratives.
+  </br></br>
+  UR Pixel Studio offers a wide range of professional photography and videography services tailored to suit various needs. From intimate weddings and joyful engagements to vibrant events and fashion shoots, we approach each project with a fresh perspective and a personal touch. Whether it’s a romantic pre-wedding session, a lively birthday celebration, a polished corporate shoot, or a meticulously styled product catalog, our goal is always the same, to deliver images that speak louder than words.
+  What sets us apart is our ability to blend artistic elegance with emotional depth. We strive to understand each client’s vision, story, and personality before we even pick up the camera. This allows us to create images that feel real, warm, and uniquely “you.” Our photography style is a natural mix of candid spontaneity, cinematic richness, and fine-art composition. Every photo we produce is carefully crafted with attention to lighting, mood, angles, and authenticity.
+  </br></br>
+  Backed by a passionate team and professional-grade equipment, UR Pixel Studio maintains the highest standards of quality in both capture and post-production. We are committed to fast turnaround times without compromising on the final output. Our editing process is subtle yet effective, ensuring that your photos look polished while remaining true to the moment.
+  </br></br>
+  At UR Pixel Studio, photography is more than just visuals. It’s about celebrating life’s beautiful chaos, honoring real emotions, and preserving stories that deserve to be told again and again. Let us be a part of your journey and together, we’ll create something truly unforgettable.
+
+
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Wedding Photography</h3>
+        <p>Capturing the magic and emotion of your special day with timeless photos that tell your love story.</p>
+      </div>
+      <div class="service-box">
+        <h3>Event Photography</h3>
+        <p>Birthday parties, corporate events, or private gatherings — beautifully documented moments for memories that last.</p>
+      </div>
+      <div class="service-box">
+        <h3>Portrait Sessions</h3>
+        <p>Individual, couple, or family portraits — natural and studio settings available to match your style.</p>
+      </div>
+      <div class="service-box">
+        <h3>Travel & Nature Shoots</h3>
+        <p>High-quality travel and nature photography with rich composition and lighting that bring scenes to life.</p>
+      </div>
+      <div class="service-box">
+        <h3>Photo Editing & Retouching</h3>
+        <p>Professional touch-ups and edits to elevate your images while preserving authenticity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Albums</h2>
+    <div class="albums">
+      <a href="#" class="album">
+        <img src="9F6DA1DE-5ABD-44B0-9188-6E27E5AA15AA.jpeg" alt="Wedding">
+        <div class="album-title">Wedding</div>
+      </a>
+      <a href="#" class="album">
+        <img src="3B0A1910.jpg" alt="Birthday">
+        <div class="album-title">Birthday</div>
+      </a>
+      <a href="#" class="album">
+        <img src="3B0A0611.jpg" alt="Travel">
+        <div class="album-title">Travel</div>
+      </a>
+      <a href="#" class="album">
+        <img src="3B0A2228.jpg" alt="Travel">
+        <div class="album-title">Graduation</div>
+      </a>
+      <a href="#" class="album">
+        <img src="3B0A4438.jpg" alt="Travel">
+        <div class="album-title">Food</div>
+      </a>
+      <a href="#" class="album">
+        <img src="3B0A4651.jpg" alt="Travel">
+        <div class="album-title">Political Events</div>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/manjqzlv" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 UR Pixel Studio. All rights reserved.</p>
+    <p>
+      <a href="https://www.instagram.com/urpixelstudio?igsh=MTR3ZTd0Z2JydDhzZw==">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>
